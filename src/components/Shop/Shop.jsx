@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
 const Shop = () => {
@@ -15,8 +16,7 @@ const Shop = () => {
     setCart(newCart);
 }
   return (
-    <>
-      <h2>Product coming here : {products.length} product</h2>
+    <> 
       <div className="shop-container">
         <div className="products-container">
           {products.map((product) => (
@@ -24,8 +24,7 @@ const Shop = () => {
           ))}
         </div>
         <div className="cart-container">
-          <h4>Order summary</h4>
-          <p>Selected Items: {cart.length}</p>
+          <Cart cart={cart}/>
         </div>
       </div>
     </>
