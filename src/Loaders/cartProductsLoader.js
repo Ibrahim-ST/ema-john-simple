@@ -15,7 +15,7 @@ const cartProductsLoader = async () => {
             savedCart.push(addedProduct);
         }
     }
-    console.log(savedCart);
+    // console.log(savedCart);
     return savedCart;
     // for multiple variable return : 
     /* 
