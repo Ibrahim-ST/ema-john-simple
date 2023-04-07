@@ -1,4 +1,4 @@
-.cart{
+.cart {
     background-color: rgba(255, 153, 0, 0.3);
     padding: 25px;
     position: sticky;
@@ -6,21 +6,21 @@
     height: 70vh;
     border-radius: 5px;
     margin-top: 40px;
-    margin-right:  15px;
+    margin-right: 15px;
 }
 
 .cart p {
     font-size: 17px;
 }
-.btn-clear-cart{
+
+.btn-clear-cart {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 56px;
-    font-size: 19px;
+    height: 56px; 
     margin: 10px auto;
     align-items: center;
     background-color: #FF3030;
     border-radius: 4px;
-    color: white
+    color: white;
 }
