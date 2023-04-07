@@ -12,3 +12,15 @@
 .cart p {
     font-size: 17px;
 }
+.btn-clear-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 56px;
+    font-size: 19px;
+    margin: 10px auto;
+    align-items: center;
+    background-color: #FF3030;
+    border-radius: 4px;
+    color: white
+}
