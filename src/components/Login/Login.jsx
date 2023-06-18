@@ -7,6 +7,8 @@ import "./Login.css";
 const Login = () => {
   const { signIn } = useContext(AuthContext);
   const [error, setError] = useState("");
+  const [show, setShow] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location);
@@ -42,7 +44,12 @@ const Login = () => {
         </div>
         <div className="form-control">
           <label htmlFor="password">Password</label>
-          <input type="password" name="password" id="" required />
+          <input type={show? 'text' : "password"} name="password" id="" required />
+          <p onClick={() =>setShow(!show)}><small>
+            {
+              show? <span>Hide password</span> : <span>Show password</span>
+            }
+            </small></p>
         </div>
         <input className="btn-submit" type="submit" value="Login" />
       </form>
